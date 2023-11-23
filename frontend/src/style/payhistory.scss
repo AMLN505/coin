@@ -1,0 +1,10 @@
+@import './mixin.scss';
+
+.pay-history {
+	@include containerWithPadTop();
+
+	&__grid {
+		@include grid();
+		grid-template-rows: 288px 288px max-content;
+	}
+}

@@ -1,0 +1,269 @@
+@import './mixin.scss';
+
+.acc-skeleton {
+	@include grid();
+	column-gap: 70px;
+	grid-template-columns: repeat(3, 1fr);
+
+	&__item {
+		height: 156px;
+		border-radius: 9px;
+		box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+		background-repeat: no-repeat;
+		animation: fade 1s linear infinite alternate;
+
+		background-image:
+		linear-gradient($colorF3F4F6 22px, transparent 0),
+		linear-gradient($colorF3F4F6 20px, transparent 0),
+		linear-gradient($colorF3F4F6 15.25px, transparent 0),
+		linear-gradient($colorF3F4F6 15.25px, transparent 0),
+		linear-gradient($colorF3F4F6 52px, transparent 0);
+
+		background-size:
+		300px 22px,
+		100px 20px,
+		150px 15.25px,
+		100px 15.25px,
+		110px 52px;
+
+		background-position:
+		22px 22px,
+		22px 53px,
+		22px 104px,
+		22px 119.25px,
+		right 22px bottom 22px;
+	}
+}
+
+.atms-skeleton {
+	width: 100%;
+	height: 100%;
+	background-color: $colorF3F4F6;
+	animation: fade 1s linear infinite alternate;
+}
+
+.dynamic-skeleton {
+	grid-area: dynamic;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 205px, transparent 0);
+
+	background-size:
+	200px 24px,
+	545px 205px;
+
+	background-position:
+	50px 25px,
+	50px 63px;
+
+	&_year {
+		grid-area: auto;
+		background-image:
+		linear-gradient($colorF3F4F6 24px, transparent 0),
+		linear-gradient($colorF3F4F6 205px, transparent 0);
+
+		background-size:
+		200px 24px,
+		1240px 205px;
+
+		background-position:
+		50px 25px,
+		50px 63px;
+	}
+}
+
+.transactions-skeleton {
+	height: 423px;
+	grid-area: transactions;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 64px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0),
+	linear-gradient($colorF3F4F6 23px, transparent 0);
+
+	background-size:
+	250px 24px,
+	1264px 64px,
+	235px 23px,
+	235px 23px,
+	70px 23px,
+	100px 23px,
+	235px 23px,
+	235px 23px,
+	70px 23px,
+	100px 23px,
+	235px 23px,
+	235px 23px,
+	70px 23px,
+	100px 23px;
+
+	background-position:
+	50px 25px,
+	50px 74px,
+	100px 159px,
+	385px 159px,
+	670px 159px,
+	790px 159px,
+	100px 231px,
+	385px 231px,
+	670px 231px,
+	790px 231px,
+	100px 303px,
+	385px 303px,
+	670px 303px,
+	790px 303px;
+
+	&_year {
+		grid-area: auto;
+	}
+}
+
+.nav-skeleton {
+	height: 166px;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 40px, transparent 0),
+	linear-gradient($colorF3F4F6 40px, transparent 0),
+	linear-gradient($colorF3F4F6 52px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0);
+
+	background-size:
+	268px 40px,
+	545px 40px,
+	211px 52px,
+	73px 24px,
+	95px 24px;
+
+	background-position:
+	6px 0px,
+	0px 76px,
+	right 0px top 0px,
+	right 120px top 84px,
+	right 0px top 84px;
+}
+
+.my-currencies-skeleton {
+	height: 411px;
+	grid-area: my-currencies;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 24px, transparent 0);
+
+	background-size:
+	150px 24px,
+	488px 24px,
+	488px 24px,
+	488px 24px,
+	488px 24px,
+	488px 24px,
+	488px 24px;
+
+	background-position:
+	50px 50px,
+	50px 99px,
+	50px 148px,
+	50px 197px,
+	50px 246px,
+	50px 295px,
+	50px 344px;
+}
+
+.exchange-skeleton {
+	height: 260px;
+	grid-area: exchange;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 24px, transparent 0),
+	linear-gradient($colorF3F4F6 19px, transparent 0),
+	linear-gradient($colorF3F4F6 44px, transparent 0),
+	linear-gradient($colorF3F4F6 19px, transparent 0),
+	linear-gradient($colorF3F4F6 44px, transparent 0),
+	linear-gradient($colorF3F4F6 19px, transparent 0),
+	linear-gradient($colorF3F4F6 44px, transparent 0),
+	linear-gradient($colorF3F4F6 110px, transparent 0);
+
+
+	background-size:
+	150px 24px,
+	20px 19px,
+	123px 44px,
+	9px 19px,
+	123px 44px,
+	51px 19px,
+	295px 44px,
+	105px 110px;
+
+	background-position:
+	50px 50px,
+	50px 110px,
+	90px 99px,
+	238px 110px,
+	267px 99px,
+	50px 178px,
+	121px 168px,
+	right 50px bottom 50px;
+}
+
+.real-time-rates-skeleton {
+	grid-area: real-time-rates;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+	background-repeat: no-repeat;
+	animation: fade 1s linear infinite alternate;
+
+	background-image:
+	linear-gradient($colorF3F4F6 24px, transparent 0);
+
+	background-size:
+	400px 24px;
+
+	background-position:
+	50px 50px;
+}
+
+
+@keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}

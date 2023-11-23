@@ -1,0 +1,47 @@
+@import './mixin.scss';
+
+.header {
+	background-color: $color116ACC;
+
+	&__container {
+		@include container();
+		@include flexCenterAlign();
+		padding: 24px 0;
+	}
+
+	&__logo {
+		margin-right: auto;
+	}
+
+	&__list {
+		@include flexCenterAlign();
+	}
+
+	&__list-item:not(:last-child) {
+		margin-right: 25px;
+	}
+
+	&__link {
+		@include button();
+		padding: 14px 24px;
+		background-color: $colorFFFFFF;
+		color: $color116ACC;
+		border: 2px solid $color116ACC;
+		transition: border-color $transition-time, background-color $transition-time;
+
+		&.active {
+			background-color: $colorA0C3FF;
+		}
+	}
+
+	&__link:hover,
+	&__link:focus-visible {
+		background-color: $colorA0C3FF;
+		border-color: $color5897DB;
+	}
+
+	&__link:active {
+		background-color: $colorCFE1F5;
+		border-color: $color116ACC;
+	}
+}

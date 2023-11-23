@@ -1,0 +1,77 @@
+@import './mixin.scss';
+
+.accounts {
+	@include containerWithPadTop();
+
+	&__top {
+		@include flexCenterAlign();
+		margin-bottom: 50px;
+	}
+
+	&__heading {
+		@include pageTitle();
+		margin-right: 35px;
+	}
+
+	& .choices {
+		width: 300px;
+		@include select();
+
+		& .choices__inner {
+			border-color: $color116ACC;
+		}
+	}
+
+	&__list {
+		@include grid();
+		column-gap: 70px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&__button {
+		@include pageIconButton();
+		background-image: url('/src/assets/images/plus.svg')
+	}
+}
+
+.account-item {
+	@include relative();
+	padding: 22px;
+	box-shadow: 0px 0px 20px 2px $colorD1D5DB;
+
+	&__number {
+		margin-bottom: 9px;
+		font-family: 'Roboto', sans-serif;
+		font-size: $fs18;
+		font-weight: $fw500;
+		line-height: 22px;
+	}
+
+	&__balance {
+		margin-bottom: 31px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: $fs14;
+		line-height: 20px;
+	}
+
+	&__lt-heading {
+		font-family: 'Work Sans', sans-serif;
+		font-size: $fs13;
+		line-height: 15.25px;
+		font-weight: $fw700;
+	}
+
+	&__lt-date {
+		font-family: 'Work Sans', sans-serif;
+		font-size: $fs13;
+		line-height: 15.25px;
+	}
+
+	&__button {
+		@include absolute();
+		@include pageButton();
+		bottom: 20px;
+		right: 20px;
+		font-size: $fs16;
+	}
+}

@@ -1,0 +1,130 @@
+@import './mixin.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:focus-visible {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+a,
+button {
+    @include clearStandart();
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: swap;
+    src: local('Work Sans Bold'), local('WorkSansBold'), local('Work-Sans-Bold'), local('WorkSans-Bold'),
+        url('/src/assets/fonts/WorkSans-Bold.woff2'),
+        url('/src/assets/fonts/WorkSans-Bold.woff');
+    font-weight: $fw700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: swap;
+    src: local('Work Sans Semi Bold'), local('WorkSansSemiBold'), local('Work-Sans-Semi-Bold'), local('WorkSans-SemiBold'),
+        url('/src/assets/fonts/WorkSans-SemiBold.woff2'),
+        url('/src/assets/fonts/WorkSans-SemiBold.woff');
+    font-weight: $fw600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: swap;
+    src: local('Work Sans Medium'), local('WorkSansMedium'), local('Work-Sans-Medium'), local('WorkSans-Medium'),
+        url('/src/assets/fonts/WorkSans-Medium.woff2'),
+        url('/src/assets/fonts/WorkSans-Medium.woff');
+    font-weight: $fw500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: swap;
+    src: local('Work Sans Regular'), local('WorkSansRegular'), local('Work-Sans-Regular'), local('WorkSans-Regular'),
+        url('/src/assets/fonts/WorkSans-Regular.woff2'),
+        url('/src/assets/fonts/WorkSans-Regular.woff');
+    font-weight: $fw400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: swap;
+    src: local('Work Sans Regular'), local('WorkSansRegular'), local('Work-Sans-Regular'), local('WorkSans-Regular'),
+        url('/src/assets/fonts/WorkSans-Regular.woff2'),
+        url('/src/assets/fonts/WorkSans-Regular.woff');
+    font-weight: $fw400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-display: swap;
+    src: local('Ubuntu Medium'), local('UbuntuMedium'), local('Ubuntu-Medium'), local('Ubuntu-Medium'),
+        url('/src/assets/fonts/Ubuntu-Medium.woff2'),
+        url('/src/assets/fonts/Ubuntu-Medium.woff');
+    font-weight: $fw500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-display: swap;
+    src: local('Ubuntu Regular'), local('UbuntuRegular'), local('Ubuntu-Regular'), local('Ubuntu-Regular'),
+        url('/src/assets/fonts/Ubuntu-Regular.woff2'),
+        url('/src/assets/fonts/Ubuntu-Regular.woff');
+    font-weight: $fw400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-display: swap;
+    src: local('Roboto Medium'), local('RobotoMedium'), local('Roboto-Medium'), local('Roboto-Medium'),
+        url('/src/assets/fonts/Roboto-Medium.woff2'),
+        url('/src/assets/fonts/Roboto-Medium.woff');
+    font-weight: $fw500;
+    font-style: normal;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+	font-size: $fs16;
+	font-weight: $fw400;
+	color: $color182233;
+}
+
+.valid {
+	border-color: $color76CA66;
+}
+
+.error {
+	border-color: $colorBA0000;
+}
