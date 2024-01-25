@@ -26,7 +26,9 @@ Frontend-разработчик
 ### BUILD-версия
 - Открыть папку /frontend/ в IDE
 - Ввести в терминал команду "npm build"
-  
+
+## [Ссылка на макет](https://www.figma.com/file/JUJVDoP27x18v4Eqt66SdK/Bank?type=design&node-id=1-1598&mode=design&t=DowAXg7fWOgPM1SI-0)
+
 ## Технологии
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JS" alt="JS" width="40" height="40"/>&nbsp;
