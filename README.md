@@ -1,16 +1,32 @@
 # Coin. App
-## About
+## О проекте
 Приложение для работы с криптовалютными операциями.
 
-## Possibilities
+## Возможности проекта
 - Авторизация внутри системы;
 - Управление счетами пользователя (создание нового счёта, отображение списка
 счетов, отображение баланса, просмотр истории транзакций);
 - Переводы на счета или карты других пользователей;
 - Возможность производить валютные обмены;
 - Отображение банкоматов на карте.
+
+## Моя роль в проекте
+Frontend-разработчик
+
+## Инструкция по запуску
+1. Скачать сборку из ветки main
+2. Открыть папку /frontend/ в IDE
+3. Установить пакеты с помощью команды в терминале "npm i"
+### DEV-версия
+- Открыть папку /backend в IDE
+- Установить пакеты с помощью команды в терминале "npm i"
+- Для запуска сервера ввести команду "npm start"
+- Открыть папку /frontend/ в IDE
+- Ввести в терминал команду "npm dev"
+### BUILD-версия
+Ввести в терминал команду "npm build"
   
-## Languages and Tools
+## Технологии
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JS" alt="JS" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML" alt="HTML" width="40" height="40"/>&nbsp;
